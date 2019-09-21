@@ -1,0 +1,390 @@
+body {
+  padding: 10px 80px;
+  background-color: #C7D3D4FF;
+}
+.fashion-store {
+  position: relative;
+}
+.fashion {
+  text-align: center;
+  position: relative;
+  font-family: 'Candal', sans-serif;
+  font-size: 100px;
+  font-style: italic;
+  -webkit-text-stroke: 1px #6B073C;
+  color: #fff;
+  text-shadow: -10px 10px 0px #6B073C;
+  margin: 0;
+}
+.store {
+  position: absolute;
+  top: 325px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 80px;
+  transform:rotate(-15deg);
+  color: #5D0720;
+  margin: 0;
+  margin-top: -250px;
+  margin-left: 550px;
+  text-shadow: 3px 2px 0px #B7919C;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 104px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Verdana;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #975262;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  left: 22%;
+  transform: translate(0%, -250%);
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    transform: translate(0%, 0%);
+}
+
+input[type=text], input[type=password], textarea {
+  opacity: 0.7;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.container2 {
+  margin-left: 150px;
+  margin-right: 150px;
+  background-image: url(img/form.jpg);
+  border-radius: 20px;
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: 1100px 1100px;
+}
+
+.container3 {
+  margin-left: 150px;
+  margin-right: 150px;
+  background-image: url(img/form2.png);
+  border-radius: 20px;
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: 1100px 1100px;
+}
+
+.container4 {
+  background-image: url(img/form3.jpg);
+  border-radius: 20px;
+  padding: 16px;
+  margin-left: 250px;
+  margin-right: 250px;
+  background-repeat: no-repeat;
+  background-size: 700px 700px;
+}
+
+.container5 {
+  border-style: ridge;
+  border-width: thick;
+  border-color: #5f4066;
+  background-color: #ecd8f0;
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: 1500px 1500px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.registerbtn {
+  border-radius: 5px;
+  background-color: #4cb07f;
+  color: white;
+  margin: 8px 250px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.registerbtn:hover {
+  background-color: #464C66;
+}
+
+.signbtn {
+  border-radius: 5px;
+  background-color: #35a4a6;
+  color: white;
+  margin: 8px 300px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+.signbtn:hover {
+  background-color: #047a6d;
+}
+
+.submitbtn {
+  border-radius: 5px;
+  background-color: #dd1ceb;
+  color: white;
+  margin: 8px 180px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+.submitbtn:hover {
+  background-color: #64306B;
+}
+
+.signin {
+  border-radius: 5px;
+  padding: 7px;
+  background-color: #CFDEE7;
+  text-align: center;
+  font-family: Verdana;
+}
+
+.Street {
+  width: 100%;
+}
+
+.City {
+  display: inline-block;
+  width: 50%;
+}
+
+.State {
+  display: inline-block;
+  width: 30%;
+}
+
+.Zip {
+  display: inline-block;
+  width: 18%;
+}
+
+.County {
+  display: inline-block;
+  width: 45%;
+}
+
+.Country {
+  display: inline-block;
+  width: 54%;
+}
+
+select {
+  opacity: 0.6;
+  width: 20%;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  outline: none;   
+}
+
+.title{
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    padding-left: 330px;
+}
+
+.title1{
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    padding-left: 400px;
+}
+
+.title2{
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    padding-left: 375px;
+    color: #34253B;
+}
+
+.title3{
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    padding-left: 440px;
+    color: #34253B;
+}
+
+.paragraph{
+    font-family: Verdana;
+    color: white;
+}
+
+.line{
+  margin-top: 35px;
+  float: left;
+}
+
+.line0{
+  margin-top: 35px;
+  float: right;
+}
+
+.line1{
+  margin-top: 35px;
+  float: left;
+}
+
+.line2{
+  margin-top: 35px;
+  float: right;
+}
+
+.line3{
+  margin-top: 30px;
+  float: left;
+}
+
+.line4{
+  margin-top: 30px;
+  float: right;
+}
+
+.line5{
+  margin-top: 25px;
+  float: left;
+}
+
+.line6{
+  margin-top: 25px;
+  float: right;
+}
+
+.line7{
+  margin-top: 20px;
+  margin-left: 40px;
+  float: left;
+}
+
+.line8{
+  margin-top: 35px;
+  margin-right: 40px;
+  float: right;
+}
+
+.lamp1{
+  margin-top: 100px;
+  margin-left: -70px;
+  float: left;
+}
+
+.lamp2{
+  margin-top: 100px;
+  margin-right: -70px;
+  float: right;
+}
+
+.login{
+    text-align: center;
+}
+
+.paragraph1{
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    padding-left: 1.8em
+}
+
+.copyright{
+    text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+

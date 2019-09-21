@@ -5,36 +5,69 @@
         <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <center><h2>The Fashion Store - Login</h2></center>
-        <hr size="6px">
-        <ul>
-            <li><a href="Lab1%20-%20Home.html">Home</a></li>
-            <li><a href="Lab1%20-%20Register.html">Register</a></li>
-            <li><a href="Lab1-%20Login.html">Login</a></li>
-            <li><a href="Lab1-%20Contact.html">Contact Us</a></li>		
-        </ul>
-        <hr>
-        <center><h3>Login into your account</h3>
-        <hr>
-        <div>
-            <label><strong>Username ID:</strong></label><br>
-            <input type="text"/>
-        </div>					
-        <div>
-            <br>
-            <label><strong>Password:</strong></label><br>
-            <input type="password"/>
-        </div> 
-        <div>
-            <br>
-            <input type="checkbox" name="terms" />
-            Remember me &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-            <a href="#"><i>Forgot Password?</i></a>
+        
+        <div class="container">
+        <img src="img/banner.jpg" alt="banner" height="350" width="1085">
+        <div class="logo"><img src="img/logo.png" alt="logo" height="250" width="195"></div>
+        <div class="fashion-store">
+            <div class="centered">
+            <h2 class="fashion">THE FASHION</h2>
+            <h3 class="store">Store</h3>
+            </div>
         </div>
+        </div>
+        <div class="space">
+        <div class="topnav">
+            <a href="Lab1%20-%20Home.html">Home</a>
+            <a href="Lab1%20-%20Register.html">Register</a>
+            <a class="active" href="Lab1-%20Login.html">Login</a>
+            <a href="Lab1-%20Contact.html">Contact Us</a>
+        </div>
+        </div>
+        <hr>
+        <div class ="line3">
+        <img src="img/line3.png"  alt="line3" width="360">
+        </div>
+        <div class ="line4">
+        <img src="img/line4.png"  alt="line4" width="360">
+        </div>
+        <div class ="title2">
+        <h3>Login Into Your Account</h3>
+        </div>
+        <hr>
+        <div class ="lamp1">
+        <img src="img/lamp1.png"  alt="lamp1" height="300" width="220">
+        </div>
+        <div class ="lamp2">
+        <img src="img/lamp2.png"  alt="lamp2" height="300" width="220">
+        </div>
+        <div class="container3">
+            <div class="login">
+            <img src="img/login.png"  alt="login" width="100" height="100">
+            </div>
+            <div class="paragraph">	 
+                <label> <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;<strong>Username ID:</strong></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required/>
+            </div>					
+            <div class="paragraph">
+                <br>
+                <label><i class="fa fa-lock"></i>&nbsp;<strong>Password:</strong></label><br>
+                <input type="password" placeholder="Enter Password" name="pword" required/>
+            </div> 
+            <br>
+            <div class="paragraph1">
+            <input type="checkbox" name="terms" />
+            Remember me &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#" style="color: #ffbb00"><i>Forgot Password?</i></a>
+            </div>
         <br>
-            <input type="submit" name="submit" value="Login">
-         </center>
+             <button type="submit" class="signbtn"><b>Login</b></button>
+        </div>
+         <br> <hr>
+        <div class="copyright">Copyright &copy;  The Fashion Store 2019</div>
     </body>
 </html>

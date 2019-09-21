@@ -1,44 +1,68 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <center><h2>The Fashion Store - Register</h2></center>
-        <hr size="6px">
-        <ul>
-            <li><a href="Lab1%20-%20Home.html">Home</a></li>
-            <li><a href="Lab1%20-%20Register.html">Register</a></li>
-            <li><a href="Lab1-%20Login.html">Login</a></li>
-            <li><a href="Lab1-%20Contact.html">Contact Us</a></li>		
-        </ul>
+        <div class="container">
+        <img src="img/banner.jpg" alt="banner" height="350" width="1085">
+        <div class="logo"><img src="img/logo.png" alt="logo" height="250" width="195"></div>
+        <div class="fashion-store">
+            <div class="centered">
+            <h2 class="fashion">THE FASHION</h2>
+            <h3 class="store">Store</h3>
+            </div>
+        </div>
+        </div>
+        <div class="space">
+        <div class="topnav">
+            <a href="Lab1%20-%20Home.html">Home</a>
+            <a class="active" href="Lab1%20-%20Register.html">Register</a>
+            <a href="Lab1-%20Login.html">Login</a>
+            <a href="Lab1-%20Contact.html">Contact Us</a>
+        </div>
+        </div>
         <hr>
-        <center><h3>Create new account</h3></center>
+        <div class ="line1">
+        <img src="img/line1.png"  alt="line1" width="350">
+        </div>
+        <div class ="line2">
+        <img src="img/line2.png"  alt="line2" width="350">
+        </div>
+        <div class ="title1">
+        <h3>Create New Account</h3>
+        </div>
+        
         <hr>
-        <center>
-                <div>	  
-                    <label><strong>Name:</strong></label><br>
-                    <input type="text"/>
+            <div class="container2">
+                <br>
+                <div class="paragraph">	  
+                    <label><i class="fa fa-user" aria-hidden="true"></i>&nbsp;<strong>Name:</strong></label><br>
+                    <input type="text" placeholder="Enter Name" name="name" required/>
                 </div>
-                <div>
+                <div class="paragraph">
 	            <br>	    
-                    <label><strong>Email:</strong></label><br>
-                    <input type="text"/>
+                    <label><i class="fa fa-envelope"></i>&nbsp;<strong>Email:</strong></label><br>
+                    <input type="text" placeholder="Enter Email" name="email" required/>
                 </div>
-                <div>
+                <div class="paragraph">
                     <br>	    
-                    <label><strong>Password:</strong></label><br>
-                    <input type="password"/> <br>
+                    <label><i class="fa fa-lock"></i>&nbsp;<strong>Password:</strong></label><br>
+                    <input type="password" placeholder="Enter Password" name="password" required/> <br>
                 </div>
-                <div>
+                <div class="paragraph">
 	            <br>	     
-                    <label><strong>Confirm Password:</strong></label><br>
-                    <input type="password"/>
+                    <label><i class="fa fa-key"></i>&nbsp;<strong>Confirm Password:</strong></label><br>
+                    <input type="password" placeholder="Enter Confirm Password" name="Cpassword" required/>
                     <br><br>
                 </div>
-                    <label><strong>Birthday:</strong></label>
+                <div class="paragraph">
+                    <label><i class="fa fa-birthday-cake"></i>&nbsp;<strong>Birthday:</strong></label>
                         <select name = "day">
 	                <option value = " ">Day</option>	              
 	                </select>
@@ -47,24 +71,47 @@
 	                </select>
 	                <select name = "year">
 	                <option value = " ">Year</option>	             
-	                </select>     	    
-                <div>
+	                </select>    
+                </div>
+                <div class="paragraph">
 	            <br>	     
-                    <label><strong>Tel. Number:</strong></label><br>
-                    <input type="text"/>
+                    <label><i class="fa fa-phone"></i>&nbsp;<strong>Tel. Number:</strong></label><br>
+                    <input type="text" placeholder="Enter Telephone Number" name="Tnum" required/>
                 </div>
-                <div>
+                <div class="paragraph">
 		    <br>	   
-                    <label><strong>Address:</strong></label><br>
-                    <textarea></textarea>
-                </div>
-                <div>
+                    <label><i class="fa fa-map-marker"></i>&nbsp;<strong>Address:</strong></label><br>
+                    <div class="Street">
+                    <input type="text" placeholder="Street">
+                    </div>
+                    <div class="City">
+                    <input type="text"  placeholder="City">
+                    </div>
+                    <div class="State">
+                    <input type="text"  placeholder="State">
+                    </div>
+                    <div class="Zip">
+                    <input type="text"   placeholder="Zip">
+                    </div>
+                    <div class="County">
+                    <input type="text"  placeholder="County">
+                    </div>
+                    <div class="Country">
+                    <input type="text"  placeholder="Country">
+                    </div>
+                
                     <br>
                     <input type="checkbox" name="terms" />
-                    I agree to the <a href="#">terms &amp; conditions</a>
+                    By creating an account you agree to our <a href="#" style="color: #ffb300">terms &amp; conditions</a>
                     <br><br>
                 </div>
-                    <input type="submit" name="submit" value="Submit">
-        </center>
+                <button type="submit" class="registerbtn"><b>Register</b></button>
+            <div class="signin">
+                <p>Already have an account? <a href="Lab1-%20Login.html">Sign in</a>.</p>
+            </div>
+        </div>
+            <br> <hr>
+            <div class="copyright">Copyright &copy;  The Fashion Store 2019</div>
+            
     </body>
 </html>
