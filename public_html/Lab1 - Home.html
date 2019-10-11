@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-
+ <!--<div class="collapse navbar-collapse" id="navbarCollapse">-->
 <html>
+    
     <head>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="bootstrap/agency.min.css" rel="stylesheet">
+        
         <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link href="style.css" type="text/css" rel="stylesheet">
-      
+        <link href="style.css" type="text/css" rel="stylesheet">
+          
     </head>
-    <body>  
+    <body>
+       
         <div class="container">
-        <img src="img/banner.jpg" alt="banner" height="350" width="1085">
+        <img src="img/banner.jpg" alt="banner" height="350" width="1100">
         <div class="logo"><img src="img/logo.png" alt="logo" height="250" width="195"></div>
         <div class="fashion-store">
             <div class="centered">
@@ -19,6 +34,8 @@
             </div>
         </div>
         </div>
+     
+        
         <div class="space">
         <div class="topnav">
             <a class="active" href="Lab1%20-%20Home.html">Home</a>
@@ -26,10 +43,13 @@
             <a href="Lab1-%20Login.html">Login</a>
             <a href="Lab1-%20Contact.html">Contact Us</a>
         </div>
+            <div class="time">
+                <a id="time"></a>
+            </div>
         </div>
         <hr>
-        <img src="img/ad.jpg" alt="ad" height="195" width="540">
-        <img src="img/ad2.jpg" alt="ad2" height="195" width="540">
+        <img src="img/ad.jpg" alt="ad" height="195" width="548">
+        <img src="img/ad2.jpg" alt="ad2" height="195" width="548">
         <center>
             <hr>
         <div class ="line">
@@ -45,7 +65,7 @@
         
         <div class="card">
             <img src="img/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Tailored Jeans</h1>
+            <h2>Tailored Jeans</h2>
             <p class="price">RM79.90</p>
             <p>Off-White brings its cool savoir-faire to the classic skinny jeans with this retro-inspired pair.</p>
             <p><button>Add to Cart</button></p>
@@ -53,7 +73,7 @@
         
          <div class="card">
             <img src="img/shirt1.png" alt="Shirt1" style="width:100%">
-            <h1>Casual Shirt Long Sleeve</h1>
+            <h2>Casual Shirt Long Sleeve</h2>
             <p class="price">RM99.90</p>
             <p> Made with 100% extra-long staple cotton for an amazingly smooth texture.</p>
             <p><button>Add to Cart</button></p>
@@ -61,7 +81,7 @@
         
          <div class="card">
             <img src="img/shoes1.jpg" alt="Shirt1" style="width:100%">
-            <h1>Canvas Casual Men Sports Shoes</h1>
+            <h2>Canvas Casual Men Sports Shoes</h2>
             <p class="price">RM149.90</p>
             <p>NEUTRAL: For runners who need a balance of flexibility & cushioning</p>
             <p><button>Add to Cart</button></p>
@@ -69,5 +89,16 @@
         </center>
          <br> <hr>
         <div class="copyright">Copyright &copy;  The Fashion Store 2019</div>
+    
+    <script>
+	var element = document.getElementById('time');	
+	
+	setInterval(function() {
+		var date = new Date();
+		element.innerHTML = (date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()) + "<br/>";
+		element.innerHTML += ((date.getHours() < 10) ? "0" + date.getHours() : date.getHours()) + ":" + ((date.getMinutes() < 10) ? "0" + date.getMinutes() : date.getMinutes()) + ":" + ((date.getSeconds() < 10) ? "0" + date.getSeconds() : date.getSeconds());
+	}, 1000);
+    </script>
     </body>
+    
 </html>

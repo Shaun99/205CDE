@@ -2,6 +2,19 @@
 
 <html>
     <head>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="bootstrap/agency.min.css" rel="stylesheet">
+        
         <title>Contact Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +23,7 @@
     </head>
     <body>
         <div class="container">
-        <img src="img/banner.jpg" alt="banner" height="350" width="1085">
+        <img src="img/banner.jpg" alt="banner" height="350" width="1100">
         <div class="logo"><img src="img/logo.png" alt="logo" height="250" width="195"></div>
         <div class="fashion-store">
             <div class="centered">
@@ -26,6 +39,9 @@
             <a href="Lab1-%20Login.html">Login</a>
             <a class="active" href="Lab1-%20Contact.html">Contact Us</a>
         </div>
+            <div class="time">
+                <a id="time"></a>
+            </div>
         </div>
         <hr>
         <div class ="line5">
@@ -91,12 +107,23 @@
                 <td align = "center"><strong>Tel (Company):</strong> (60)4-792 2217</td>
             </tr>
         </table>
+        <br>
         <center>
             <p>For any enquiry, kindly email to <b> thefashionstore@gmail.com.my </b></p>
         </center>
         </div>
         <hr>
         <div class="copyright">Copyright &copy;  The Fashion Store 2019</div>
+        
+    <script>
+	var element = document.getElementById('time');	
+	
+	setInterval(function() {
+		var date = new Date();
+		element.innerHTML = (date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()) + "<br/>";
+		element.innerHTML += ((date.getHours() < 10) ? "0" + date.getHours() : date.getHours()) + ":" + ((date.getMinutes() < 10) ? "0" + date.getMinutes() : date.getMinutes()) + ":" + ((date.getSeconds() < 10) ? "0" + date.getSeconds() : date.getSeconds());
+	}, 1000);
+    </script>
     </body>
 </html>
 
