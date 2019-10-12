@@ -1,24 +1,30 @@
-
 <html>
     <head>
         <title>Challenge 1</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <script>
-           const num = Math.ceil(Math.random() * 10);
-            console.log(num);
-            const gnum = prompt('Guess the number between 1 and 10 inclusive');
-            if (gnum === num)
-              console.log('Good Work');
-             else
-              console.log('Not matched, the number was '+ gnum);
-
-        </script>
-        
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     </head>
     <body>
-        
+        <p>Please enter an integer between 1 to 10: </p>
+        <input id="inputFiled" type=text />
+        <input type="button" onclick="check()" value="Check" />
+        <p id="random"></p>
+        <div id="feedback"></div>
+        <script>
+            function check() {
+                var x = Math.floor((Math.random() * 10) + 1);
+                var i = document.getElementById('inputFiled').value;
+                var feedback = document.getElementById('feedback');
+
+                if (i == '') {
+                    feedback.innerHTML = 'Error, please enter a number.';
+                } else if(i == x){
+                    feedback.innerHTML = 'Good Work';
+                } else {
+                    feedback.innerHTML = 'Not matched, the number was: ' + x;
+                }
+           }
+       </script>
     </body>
 </html>
+
