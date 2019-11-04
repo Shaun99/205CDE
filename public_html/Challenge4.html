@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Challenge 4</title>
+<style>  
+body{padding-top:30px;}
+label,input{display:block;}  
+</style>
+</head>
+<body>
+Country:
+<select id="mySelect" onchange="getOptions()">
+    <option value="1">Bangkok</option>
+    <option value="2">Japan</option>
+    <option value="3">Switzerland</option>
+    <option value="4">UK</option>
+</select>
+<script>
+ function getOptions()  
+    {  
+        var x=document.getElementById("mySelect");  
+        var txt1 = "No. of items : ";  
+        var i;  
+        l=document.getElementById("mySelect").length;    
+        txt1 = txt1+l;  
+        for (i=0;i<x.length;i++)  
+          {  
+            txt1 = txt1 + "\n" + x.options[i].text;  
+          }  
+        alert(txt1);  
+    }
+</script>
+</body>
+</html>
+
+
